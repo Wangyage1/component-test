@@ -1,0 +1,38 @@
+//默认大小的radio-button
+@text-size: 18px;
+@light-theme: red;
+.radio-button {	
+	text-align: center;
+}
+
+.radio-button-large {
+	padding: 0 29px;
+	height: 36px;
+	line-height: 36px;
+	font-size: @text-size;
+}
+
+.radio-button-default {
+	padding: 0 13px;
+	height: 24px;
+	line-height: 24px;
+	font-size: 12px;
+	&:first-child{
+		border-radius: 2px 0 0 2px;
+	}
+	&:last-child{
+		border-radius: 0 2px 2px 0;
+	}
+}
+
+:global {
+	.ant-radio-button-wrapper-checked {
+		color: @light-theme;
+	}
+	.ant-radio-button-wrapper-checked:first-child {
+	    border-color: @light-theme;
+	}
+	.ant-radio-button-wrapper:hover {
+		color: @light-theme;
+	}
+}
